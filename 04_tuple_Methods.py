@@ -1,0 +1,6 @@
+a=('kunal','lucky',37,22,1,22)
+print(a)
+no=a.count(22)
+print(no)
+index=a.index(37)
+print(index)
