@@ -1,0 +1,34 @@
+import turtle
+
+# Create screen
+screen = turtle.Screen()
+screen.bgcolor("orange")
+screen.title("Ganesh Ji Symbol")
+
+# Create turtle
+t = turtle.Turtle()
+t.speed(10)
+t.pensize(3)
+t.color("red")
+
+# Head (half circle)
+t.circle(50, 180)
+
+# Trunk
+t.right(90)
+t.forward(100)
+t.circle(-50, 180)  # curve for trunk
+
+# Left ear
+t.left(90)
+t.forward(50)
+t.circle(30, 180)
+t.forward(50)
+
+# Move back for right ear
+t.backward(50)
+t.right(180)
+t.circle(30, 180)
+
+t.hideturtle()
+turtle.done()

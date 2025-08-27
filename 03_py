@@ -1,0 +1,127 @@
+import turtle
+
+# Setup window
+screen = turtle.Screen()
+screen.bgcolor("orange")
+screen.title("Hanuman Ji Symbolic Drawing")
+
+pen = turtle.Turtle()
+pen.speed(10)
+pen.pensize(3)
+pen.color("red")
+
+# Face circle
+pen.penup()
+pen.goto(0, -100)
+pen.pendown()
+pen.circle(100)
+
+# Tilak
+pen.penup()
+pen.goto(-20, 50)
+pen.pendown()
+pen.setheading(90)
+pen.forward(50)
+pen.penup()
+pen.goto(20, 50)
+pen.pendown()
+pen.forward(50)
+
+# Ears
+pen.penup()
+pen.goto(-100, 0)
+pen.pendown()
+pen.circle(50)
+pen.penup()
+pen.goto(100, 0)
+pen.pendown()
+pen.circle(50)
+
+# Simple trunk
+pen.penup()
+pen.goto(0, -100)
+pen.pendown()
+pen.right(90)
+pen.forward(150)
+pen.circle(40, 180)
+
+pen.hideturtle()
+turtle.done()
+
+
+
+import turtle
+
+t = turtle.Turtle()
+t.speed(10)
+t.pensize(3)
+turtle.bgcolor("orange")
+t.color("red")
+
+# Face
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.circle(100)
+
+# Tilak
+t.penup()
+t.goto(-20, 50)
+t.pendown()
+t.setheading(90)
+t.forward(50)
+t.penup()
+t.goto(20, 50)
+t.pendown()
+t.forward(50)
+
+# Ears
+t.penup()
+t.goto(-100, 0)
+t.pendown()
+t.circle(50)
+t.penup()
+t.goto(100, 0)
+t.pendown()
+t.circle(50)
+
+# Tail symbolic
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.right(90)
+t.forward(200)
+t.circle(40, 180)
+
+t.hideturtle()
+turtle.done()
+
+
+import turtle
+
+t = turtle.Turtle()
+t.speed(10)
+t.pensize(3)
+turtle.bgcolor("orange")
+t.color("red")
+
+# Draw Ganesh Ji Symbol (Trunk + Outline)
+t.circle(50, 180)      # Head
+t.right(90)
+t.forward(100)         # Trunk
+t.circle(-50, 180)     # Curve of trunk
+
+# Decorative ear
+t.left(90)
+t.forward(50)
+t.circle(30, 180)
+t.forward(50)
+
+# Decorative other ear
+t.backward(50)
+t.right(180)
+t.circle(30, 180)
+
+t.hideturtle()
+turtle.done()
+ 
