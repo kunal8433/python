@@ -21,5 +21,6 @@ I will share small Python projects here as I learn:
 
 ## Let's Connect:
 - GitHub: [https://github.com/kunal8433/python]
-- LinkedIn: [kunal-chaudhary087666380-]
+- LinkedIn: [www.linkedin.com/in/
+kunal-chaudhary087666380-]
 - instagram:[https://www.instagram.com/kunal.malik78/?__pwa=1#]
