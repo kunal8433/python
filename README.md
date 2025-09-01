@@ -1,6 +1,8 @@
 # Hi, I'm Kunal Chaudhary 👋
 
-I am a Class 11 student and an aspiring engineer. I love learning new things in technology and programming.  
+I am a Class 11 student and an aspiring engineer. I love learning new things in technology and programming. 
+
+📫 How to reach me: kunalchaudhary843305@gmail.com 
 
 ## About Me
 - Currently learning **Python** and exploring projects.
