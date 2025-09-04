@@ -17,9 +17,16 @@
 
 - ⚡ Fun fact **Enjoy every movement**
 
-- <div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
+- <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+  <img 
+    src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" 
+    alt="Coding Animation" 
+    width="600" 
+    height="300"
+    style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
+  />
 </div>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
