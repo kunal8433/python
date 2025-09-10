@@ -1,5 +1,8 @@
-username=(input("Enter your username :"))
-if(len(username)>10):
-    print("L1 is a long string")
+n= int(input("Enter a number:"))
+
+for i in range(2, n):
+    if (n%i)==0:
+        print("Not a prime number")
+        break
 else:
-    print("L1 is a short string")
+    print("Prime number")
