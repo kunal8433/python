@@ -1,8 +1,4 @@
-s=set()
-print(len(s))
-s.add(20)
-print(len(s))
-s.add(20.0)
-print(len(s))
-s.add("20")
-print(len(s))
+def multiply(n):
+    for i in range (1,11):
+        print(f"{n} X {i} = {n*i}")
+multiply(5)
