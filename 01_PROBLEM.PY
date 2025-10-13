@@ -1,11 +1,10 @@
-#display all tables from 0 to 6
-for i in range (0,7):
-    for j in range (1,10):
-        print(f"{i} x {j} = {i*j}")
-    print()
+class programmer:
+    company = "Microsoft"
 
-#display only [1] table
-n= int(input("Enter the number:"))
+    def __init__(self, salary , name , pincode):
+     self.salary = salary
+     self.name = name
+     self.pincode = pincode 
 
-for i in range (1,11):
-    print(f"{n} x {i} = {n*i}")
+kunal = programmer( 13000000 , "kunal" , 500081)
+print(kunal.salary , kunal.name , kunal.pincode , kunal.company)

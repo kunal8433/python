@@ -1,7 +1,17 @@
-n = int(input("Enter the number of rows: "))
+class Calculator:
+    def __init__(self ,n):
+        self.n = n
 
-i = 1
-while(i<11):
-    print(f"{n} x {i} = {n*i}")
-    i = i+1
-print()
+    def square(self):
+            print(f"The square is {self.n*self.n}")
+    def cube(self):
+            print(f"The cube is {self.n*self.n*self.n}")
+    def squreroot(self):
+            print(f"The squareroot is {self.n**1/2}")
+
+
+a = Calculator(4)
+a.square()
+a.cube()
+a.squreroot()
+        
