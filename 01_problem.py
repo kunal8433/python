@@ -1,13 +1,20 @@
+class TwoDVector:
+    def __init__(self,i,j):
+        self.i = i
+        self.j = j
 
-a = int(input("Enter your number:"))
-b = int(input("Enter your number:"))
-c = int(input("Enter your number:"))
-if a > b and a > c:
-    print("a is the greatest")
-elif b > a and b > c:
-    print("b is gratest")
-elif c > a and c > b :
-    print("c is gratest")
-else:
-     a==b==c
-     print("all are equal")
+    def show(self):
+        print("The Vactor is :", self.i , "i +", self.j, "j")
+
+class ThreeDVector (TwoDVector):
+    def __init__(self,i,j,k):
+        super().__init__(i,j)
+        self.k = k
+
+    def show (self):
+        print("The Vactor is :", self.i , "i +", self.j, "j +", self.k, "k")
+
+a = TwoDVector(1,2) 
+a.show()
+b = ThreeDVector(1,2,3)
+b.show()   

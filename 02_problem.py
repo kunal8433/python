@@ -1,5 +1,11 @@
-def sum(n):
-    if(n==1):  
-        return 1
-    return sum(n-1) + n
-print(sum(4))
+class Animal:
+    pass 
+class Pets(Animal):
+    pass
+
+class Dog(Pets):
+    @staticmethod
+    def bark():
+        print("Woof Woof!")
+d = Dog()
+d.bark()
