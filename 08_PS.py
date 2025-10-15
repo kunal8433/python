@@ -1,0 +1,8 @@
+a=(input("Enter your fruite name 1:"))
+b=(input("Enter your fruite name 2:"))
+c=(input("Enter your fruite name 3:"))
+d=(input("Enter your fruite name 4:"))
+e=(input("Enter your fruite name 5:"))
+f=(input("Enter your fruite name 6:"))
+g=(input("Enter your fruite name 7:"))
+print("List:",a,b,c,d,e,f,g)
