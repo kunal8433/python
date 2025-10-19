@@ -1,0 +1,10 @@
+print("WELCOM TO LUCKY AND KUNAL WORLD")
+print()
+print("MY SCHOOL NAME IS : BIT GLOBLE SCHOOL")
+print()
+
+print("AND WHAT IS YOUR SCHOOL NAME LUCKY")
+
+
+a = input("ENTER YOUR SCHOOL NAME :")
+print("OH! LUCKY YOUR SCHOOL NAME IS :", a    )
