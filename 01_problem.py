@@ -1,20 +1,25 @@
-class TwoDVector:
-    def __init__(self,i,j):
-        self.i = i
-        self.j = j
+print( '''Twinkle, twinkle, little star, 
+How I wonder what you are! 
+Up above the world so high, 
+Like a diamond in the sky. 
 
-    def show(self):
-        print("The Vactor is :", self.i , "i +", self.j, "j")
+When the blazing sun is gone, 
+When he nothing shines upon, 
+Then you show your little light, 
+Twinkle, twinkle, all the night. 
 
-class ThreeDVector (TwoDVector):
-    def __init__(self,i,j,k):
-        super().__init__(i,j)
-        self.k = k
+Then the traveler in the dark 
+Thanks you for your tiny spark, 
+How could he see where to go, 
+If you did not twinkle so? 
 
-    def show (self):
-        print("The Vactor is :", self.i , "i +", self.j, "j +", self.k, "k")
+In the dark blue sky you keep, 
+Often through my curtains peep 
+For you never shut your eye, 
+Till the sun is in the sky. 
 
-a = TwoDVector(1,2) 
-a.show()
-b = ThreeDVector(1,2,3)
-b.show()   
+As your bright and tiny spark 
+Lights the traveler in the dark, 
+Though I know not what you are, 
+Twinkle, twinkle, little star. 
+''')

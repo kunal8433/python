@@ -1,11 +1,4 @@
-class Animal:
-    pass 
-class Pets(Animal):
-    pass
-
-class Dog(Pets):
-    @staticmethod
-    def bark():
-        print("Woof Woof!")
-d = Dog()
-d.bark()
+a= 19 
+b=384
+c=a+b
+print(c)

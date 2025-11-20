@@ -1,6 +1,2 @@
-def pattern(n):
-    if(n==0):
-        return
-    print("*"*n)
-    pattern(n-1)
-pattern(4)
+user = int(input("Enter your number:"))
+print(type(user))
