@@ -1,0 +1,2 @@
+a =   "  kunal  "
+print(a)
