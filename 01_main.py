@@ -1,16 +1,15 @@
-import random 
-n = random.randint(1, 100)
-a =-1
-gusses = 0
-while(a!=n):
-    a = int(input("Guess the number: "))
-    if(a>n):
-        print("Lower number plss")
-        gusses +=1
-    elif(a<n):
-        print("Higher number plss")
-        guesses +=1
+import speech_recognition as sr
+import webbrowser
 
-print(f"You have guess the number {n} correctly {gusses} attempts")
+import pyttsx3
 
+recognizer = sr.Recognizer()
+engine = pyttsx3.init()
+
+def speek(text):
+    engine.say(text)
+    engine.runAndWait()
+
+if __name__ == "main__":
+    speek("Hello, how can I assist you today?")
 
