@@ -1,0 +1,11 @@
+print("hii I Am kunal malik ")
+print()
+print("Welcome to Calculator One Line")
+print()
+print("1. addition")
+print("2. subtraction")
+print("3. multiplication")
+print("4. division")
+print()
+
+print(eval(input ("Enter your calculation: ")))
