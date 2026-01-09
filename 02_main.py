@@ -1,17 +1,24 @@
-import pyttsx3
+import random
+randNumber = random.randint(1, 100)
+userGuess = None
+guesses = 0
 
-if __name__ == "__main__":
-    engine = pyttsx3.init()
-    print("Welcome to Kunal Robo Speaker 1.1")
-    print()
+while(userGuess != randNumber):
+    userGuess = int(input("Enter your guess: "))
+    guesses += 1
+    if(userGuess==randNumber):
+        print("You guessed it right!")
+    else:
+        if(userGuess>randNumber):
+            print("You guessed it wrong! Enter a smaller number")
+        else:
+            print("You guessed it wrong! Enter a larger number")
 
-    while True:
-        x = input("Enter your command (type 'exit' to quit): ")
-        if x == "e":
-            engine.say("Exiting the program. Goodbye!")
-            engine.runAndWait() 
-            
-            break
+print(f"You guessed the number in {guesses} guesses")
+with open("hiscore.txt", "r") as f:
+    hiscore = int(f.read())
 
-        engine.say(x)
-        engine.runAndWait()
+if(guesses<hiscore):
+    print("You have just broken the high score!")
+    with open("hiscore.txt", "w") as f:
+        f.write(str(guesses))
