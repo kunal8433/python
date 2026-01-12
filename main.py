@@ -1,82 +1,72 @@
-# Tic Tac Toe Game in Python (Console Version)
-# Beginner friendly – run this file in VS Code
+import random
+print()
+print("🎮 WELCOME TO [KUNAL] GUN 🔫 WATER 💧 SNAKE 🐍 GAME 🎮")
+print()
+print("Rules:")
+print("🔫 Gun beats 🐍 Snake")
+print("💧 Water beats 🔫 Gun")
+print("🐍 Snake beats 💧 Water")
+print("-" * 40)
 
-# Create the board
-board = [' ' for _ in range(9)]
+yourdict = {"g": 1, "w": 2, "s": 3}
+maindict = {
+    1: "Gun 🔫",
+    2: "Water 💧",
+    3: "Snake 🐍"
+}
 
-# Function to print the board
-def print_board():
-    print("\n")
-    print(board[0], '|', board[1], '|', board[2])
-    print('--+---+--')
-    print(board[3], '|', board[4], '|', board[5])
-    print('--+---+--')
-    print(board[6], '|', board[7], '|', board[8])
-    print("\n")
+user_score = 0
+computer_score = 0
+round_no = 1
 
-# Check winner
-def check_winner(player):
-    win_conditions = [
-        [0,1,2], [3,4,5], [6,7,8],
-        [0,3,6], [1,4,7], [2,5,8],
-        [0,4,8], [2,4,6]
-    ]
-    for condition in win_conditions:
-        if board[condition[0]] == board[condition[1]] == board[condition[2]] == player:
-            return True
-    return False
+while True:
+    print(f"\n🔁 Round {round_no}")
+    print("Choose: g (Gun 🔫), w (Water 💧), s (Snake 🐍)")
+    print("Press q to Quit ❌")
 
-# Check draw
-def check_draw():
-    return ' ' not in board
+    yourstr = input("👉 Enter your choice: ").lower()
 
-# Main game loop
-def play_game():
-    current_player = 'X'
+    if yourstr == "q":
+        print("\n🏁 GAME OVER")
+        print(f"🙋 Your Score: {user_score}")
+        print(f"🤖 Computer Score: {computer_score}")
 
-    while True:
-        print_board()
-        print(f"Player {current_player} turn")
-        
-        try:
-            move = int(input("Enter position (1-9): ")) - 1
-        except ValueError:
-            print("Please enter a number between 1 to 9")
-            continue
-
-        if move < 0 or move > 8:
-            print("Invalid position! Choose 1 to 9")
-            continue
-
-        if board[move] != ' ':
-            print("Position already taken!")
-            continue
-
-        board[move] = current_player
-
-        if check_winner(current_player):
-            print_board()
-            print(f"Player {current_player} wins! 🎉")
-            break
-
-        if check_draw():
-            print_board()
-            print("Game Draw!")
-            break
-
-        # Switch player
-        if current_player == 'X':
-            current_player = 'O'
+        if user_score > computer_score:
+            print("🎉 YOU WON THE GAME! 🏆")
+        elif user_score < computer_score:
+            print("😢 YOU LOST THE GAME!")
         else:
-            current_player = 'X'
+            print("🤝 MATCH DRAW!")
 
-# Start the game
-print("Welcome to Tic Tac Toe")
-print("Positions are like this:")
-print("1 | 2 | 3")
-print("--+---+--")
-print("4 | 5 | 6")
-print("--+---+--")
-print("7 | 8 | 9")
+        print("Thanks for playing 😊")
+        break
 
-play_game()
+    if yourstr not in yourdict:
+        print("⚠️ Invalid input! Please choose g, w, or s.")
+        continue
+
+    computer = random.choice([1, 2, 3])
+    you = yourdict[yourstr]
+
+    print(f"\n🙋 Your choice: {maindict[you]}")
+    print(f"🤖 Computer choice: {maindict[computer]}")
+
+    if computer == you:
+        print("🤝 It's a DRAW!")
+    
+    elif (
+        (computer == 1 and you == 2) or
+        (computer == 2 and you == 3) or
+        (computer == 3 and you == 1)
+    ):
+        print("🎉 YOU WIN THIS ROUND!")
+        user_score += 1
+    
+    else:
+        print("💀 YOU LOSE THIS ROUND!")
+        computer_score += 1
+
+    print(f"📊 Score → You: {user_score} | Computer: {computer_score}")
+    print("-" * 40)
+
+    round_no += 1
