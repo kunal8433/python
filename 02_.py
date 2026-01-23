@@ -1,27 +1,9 @@
-print("Word Guessing Game 🧠")
-
-word = "code"
-guessed = ""
-tries = 5
-
-while tries > 0:
-    letter = input("Guess a letter: ")
-
-    if letter in word:
-        guessed += letter
-        print("Good guess 👍")
-    else:
-        tries -= 1
-        print("Wrong guess ❌, Tries left:", tries)
-
-    done = True
-    for ch in word:
-        if ch not in guessed:
-            done = False
-
-    if done:
-        print("You guessed the word 🎉:", word)
-        break
-
-if tries == 0:
-    print("Game Over 😢, Word was:", word)
+no_1 = 65
+no_2 = 23
+no_3 = 89
+if no_1 > no_2 and no_1 > no_3:
+    print("no_1 is greater")
+elif no_2 > no_1 and no_2 > no_3:
+    print("no_2 is greater")
+else:
+    print("no_3 is greater")
