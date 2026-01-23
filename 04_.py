@@ -1,3 +1,2 @@
-name = "kunal"
-surname = "malik"
-print(f"The name is:{name}\n The surname is:{surname}")
+list2 = [67,876,7,9,67]
+print(sum(list2))
