@@ -1,6 +1,6 @@
-s = set()
-s.add(18)
-s.add("18")
-print(s)
-s=18
-print(type(s))
+def sum(n):
+    if (n==1):
+        return 1
+    return sum(n-1) + n
+
+print(sum(4))
