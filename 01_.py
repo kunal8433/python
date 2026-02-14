@@ -1,5 +1,5 @@
-nums = [12, 5, 8, 20, 3, 15]
-print(sum(nums))
-for num in nums:
-    if num % 2 == 0:
-        print(num)
+num = int(input("Enter your number:"))
+for i in range (1 , num+1):
+    for j in range (i):
+        print("*", end = "")
+    print()
