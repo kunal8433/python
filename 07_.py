@@ -1,6 +1,18 @@
-subject = input("Enter your today subject:")
-time = int(input("How many time you give [hr]:"))
-topic = input("In which topic yor study:")
+import random
+while True:
+    choice = input("Rolling a Dice? (y/n): ")
 
-print(f"you study : {subject} \n time is : {time} \n the topic is :{topic}")
+    if choice == "y":
+        computer = random.choice([
+            (1,2),(3,4),(5,6),
+            (1,3),(2,4),(5,1),
+            (6,2),(3,5),(4,6)
+        ])
+        print("Dice rolled:", computer)
 
+    elif choice == "n":
+        print("Thank you")
+        break   # loop stop ho jayega
+
+    else:
+        print("Invalid Choice")
