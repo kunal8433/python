@@ -1,8 +1,8 @@
-class Demo :
-    a = 4
-o = Demo()
-print(o.a)  #4
-o.a = 0
-print(o.a) #0
-print(Demo.a) #4
+n= int(input("Enter a number:"))
 
+for i in range(2, n):
+    if (n%i)==0:
+        print("Not a prime number")
+        break
+else:
+    print("Prime number")
