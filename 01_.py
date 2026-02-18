@@ -1,9 +1,4 @@
-class programer :
-    company ="Microsoft"
-    salary = "120000"
-class employe(programer):
-    name = "kunal"
-    age = "17"
-    adress = "Meerut"
-E1 = employe
-print(E1)
+import pandas as pd
+data = {"name": ["kunal" , "lucky " , "khana"] , "age": [23 , 24 , 2], "marks": [90 , 80 , 100]}
+df = pd.DataFrame(data)
+print(df)
