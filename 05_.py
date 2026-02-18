@@ -1,4 +1,3 @@
-import pandas as pd
-data = {"name" : ["kunal","lucky"] ,"marks" : [85 , 99] }
-df = pd.DataFrame (data)
-print(df)
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+print("The difference of the two numbers is:", num1 - num2)
