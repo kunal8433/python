@@ -1,3 +1,3 @@
-a = int(input("Enter your number :"))
-for i in range(1,11):
-    print(f"{a} x {i} = {a*i}")
+table = int(input("Enter your table no. :"))
+for i in range(1, 11):
+    print(table*i)
