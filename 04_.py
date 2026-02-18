@@ -1,2 +1,3 @@
-list2 = [67,876,7,9,67]
-print(sum(list2))
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+print("The sum of the two numbers is:", num1 + num2)
