@@ -9,3 +9,5 @@ print("4. division")
 print()
 
 print(eval(input ("Enter your calculation: ")))
+#EVAL function use to calculate the expression given in string format.
+#For Example: eval("2+3") will return 5
