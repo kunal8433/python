@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm KUNAL MALIK</h1>
-<h3 align="center">I'M A STUDENT AND LEARNING {PYTHON}</h3>
+<h3 align="center">I'M A STUDENT AND LEARNING {PYTHON} / {DSA} / {JAVA}</h3>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kunal8433" alt="kunal8433" /></a> </p>
 
