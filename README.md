@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on **learning programing language**
 
-- 🌱 I’m currently learning **PYTHON**
+- 🌱 I’m currently learning **PYTHON / JAVA / DSA **
 
 - 👨‍💻 All of my projects are available at [https://github.com/kunal8433/python](https://github.com/kunal8433/python)
 
